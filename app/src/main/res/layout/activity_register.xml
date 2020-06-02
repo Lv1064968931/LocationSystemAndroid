@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginbtn_bg"
+    tools:context=".Activity.LoginActivity">
+
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        >
+
+        <TableRow
+            android:layout_weight="1"
+            >
+            <EditText
+                android:id="@+id/register_username_ET"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:hint="请输入要注册的用户名"
+                android:textColorHint="#E5E5E5"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/edittext_round"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            >
+            <EditText
+                android:id="@+id/register_password_ET"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:inputType="textPassword"
+                android:hint="请设置密码"
+                android:textColorHint="#E5E5E5"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/edittext_round"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        >
+        <ImageButton
+            android:id="@+id/register_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/loginbtn_bg"
+            android:background="@drawable/btn_round"/>
+    </LinearLayout>
+
+</LinearLayout>
